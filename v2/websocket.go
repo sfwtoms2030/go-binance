@@ -27,7 +27,7 @@ func newWsConfig(endpoint string) *WsConfig {
 }
 
 var wsServe = func(cfg *WsConfig, handler WsHandler, errHandler ErrHandler) (doneC, stopC chan struct{}, err error) {
-	proxyURL, _ := url.Parse("https://127.0.0.1:11000")
+	proxyURL, _ := url.Parse("http://127.0.0.1:11000")
 	dialer := websocket.Dialer{
 		Proxy: http.ProxyURL(proxyURL),
 	}
