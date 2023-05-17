@@ -350,7 +350,7 @@ Use the `delivery.UseTestnet` flag before calling the client creation and the we
 import (
     "github.com/sfwtoms2030/go-binance/v2/delivery"
 )
-
+do some test
 delivery.UseTestnet = true
 BinanceClient = delivery.NewClient(ApiKey, SecretKey)
 ```
